@@ -1,0 +1,277 @@
+/* Basic body reset and font import */
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #f0f2f5;
+    /* Light gray background to see the navbar clearly */
+}
+
+/* Main navbar container */
+.navbar {
+    background-color: #212529;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    /* Optional: for wider screens */
+    margin: 0 auto;
+}
+
+/* Styles for the left side (logo and menu) */
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo styles */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 6px;
+    width: 40px;
+    height: 40px;
+    margin-right: 2rem;
+}
+
+/* Navigation menu styles */
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.75rem;
+    /* Space between menu items */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #a9b1ba;
+    font-size: 1rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+/* Style for the active page link */
+.nav-link.active {
+    color: #ffffff;
+}
+
+/* Style for bolded links */
+.nav-link.bold {
+    font-weight: 700;
+    color: #e9ecef;
+}
+
+/* Styles for the right side (search) */
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    background-color: #212529;
+    border: 1px solid #495057;
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    color: #ffffff;
+    font-size: 0.9rem;
+    width: 220px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+/* Style for the placeholder text */
+.search-input::placeholder {
+    color: #a9b1ba;
+}
+
+/* Style when the search input is focused */
+.search-input:focus {
+    outline: none;
+    border-color: #899199;
+}
+
+
+/* --- Basic Page Setup --- */
+
+
+/* --- Main Container --- */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    /* Centers the content */
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+/* --- Form Container (The White Box) --- */
+form {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Margin Utility --- */
+.mb-3 {
+    margin-bottom: 1.25rem;
+}
+
+/* --- Form Labels --- */
+.form-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* --- Text Input Fields --- */
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    /* Important for width calculation */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* --- Helper Text --- */
+.form-text {
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    color: #6c757d;
+}
+
+/* --- Checkbox Section --- */
+.form-check {
+    display: flex;
+    align-items: center;
+}
+
+.form-check-input {
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+}
+
+.form-check-label {
+    font-size: 0.95rem;
+}
+
+/* --- Button Styles --- */
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #000000;
+    /* black */
+    color: #ffffff;
+    /* white text */
+    border: 1px solid #000000;
+    padding: 5px 12px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    /* link underline hatane ke liye */
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff;
+    /* white */
+    color: #000000;
+    /* black text */
+    border: 1px solid #000000;
+}
+
+
+
+/* --- Main Table Styles (.table) --- */
+.table {
+    width: 100%;
+    /* Makes the table span the full width of its container */
+    margin-bottom: 1rem;
+    vertical-align: top;
+    border-color: #dee2e6;
+    border-collapse: collapse;
+    /* Merges cell borders for a cleaner look */
+}
+
+/* --- Table Header Styles (thead) --- */
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    /* Thicker line below the header */
+    text-align: left;
+    /* Aligns header text to the left */
+}
+
+/* --- General Cell Styles (th, td) --- */
+.table th,
+.table td {
+    padding: 0.75rem;
+    /* Adds padding inside each cell */
+    border-bottom: 1px solid #dee2e6;
+    /* Horizontal lines for each row */
+}
+
+/* --- Table Body Row Hover Effect --- */
+/* Changes the background color when you move your mouse over a row */
+.action-buttons {
+    display: flex;
+    justify-content: space-between; /* left aur right me align */
+    width: 180px; /* thoda space fix karne ke liye */
+}
+
+.btn-black {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
+    padding: 5px 12px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    flex: 1; /* dono buttons equal width le lenge */
+    margin: 0 3px;
+}
+
+.btn-black:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+
+

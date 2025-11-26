@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar - Sirf ek baar define -->
+    <nav class="navbar my-3">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="#" class="nav-logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.42857 3.42857C7.4939 3.42857 6 5.0169 6 7.2V8.22857M9.42857 20.5714C7.4939 20.5714 6 18.9831 6 16.8V15.7714M6 8.22857C6 10.3752 4.28571 12 4.28571 12C4.28571 12 6 13.6248 6 15.7714M6 8.22857V15.7714" stroke="#212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M11.1429 12H15.4286C16.8381 12 18 10.8381 18 9.42857V8.57143C18 7.1619 16.8381 6 15.4286 6H12.8571M11.1429 12H12.8571M11.1429 12V14.5714C11.1429 16.4658 12.6771 18 14.5714 18H15.4286C16.8381 18 18 16.8381 18 15.4286V14.5714C18 13.1619 16.8381 12 15.4286 12H12.8571" stroke="#212529" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#" class="nav-link">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <input type="search" class="search-input" placeholder="Search...">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Block -->
+    {% block body %}
+    {% endblock body %}
+</body>
+</html>
